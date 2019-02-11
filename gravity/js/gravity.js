@@ -1,34 +1,13 @@
 
 // Initial Setup
-var canvas = document.querySelector('canvas');
-var c = canvas.getContext('2d');
+const canvas = document.querySelector('canvas');
+const c = canvas.getContext('2d');
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
 
-// Variables
-// var mouse = {
-// 	x: innerWidth / 2,
-// 	y: innerHeight / 2 
-// };
 
-// var colors = [
-// 	'#2185C5',
-// 	'#7ECEFD',
-// 	'#FFF6E5',
-// 	'#FF7F66'
-// ];
-// var colorArray=[];
-// for (var i=0;i<600;i++){
-//     const values=[1,2,3,4,5,6,7,8,9,"A",'B','C','D','E','F'];
-//     var hexColor="#";
-//     for(var j=0;j<6;j++){
-//         let random=Math.floor(Math.random()*values.length);
-//         hexColor+=values[random];
-//     }
-//     colorArray.push(hexColor);
-// }
 var colorArray=[];
     for (var j=1;j<600;j++){
         
@@ -41,8 +20,8 @@ var colorArray=[];
         colorArray.push(hexColor);
     }
     
-var gravity = 0.2;
-var friction = 0.88;
+const gravity = 0.2;
+const friction = 0.88;
 
 
 // Event Listeners
